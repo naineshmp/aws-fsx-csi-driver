@@ -39,12 +39,12 @@ const (
 
 	// PollCheckInterval specifies the interval to check if filesystem is ready;
 	// needs to be shorter than the provisioner timeout
-	PollCheckInterval = 30 * time.Second
+	PollCheckInterval = 60 * time.Second
 	// PollCheckTimeout specifies the time limit for polling DescribeFileSystems
 	// for a completed create/update operation. FSx for Lustre filesystem
 	// creation time is around 5 minutes, and update time varies depending on
 	// target file system values
-	PollCheckTimeout = 10 * time.Minute
+	PollCheckTimeout = 45 * time.Minute
 )
 
 // Tags
